@@ -9,7 +9,7 @@ It relies on the [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/)
 
 Since the solutions in the solution's page are dynamically generated, it is necessary to keep scrolling down in order to be able to collect all of them. This task was facilitated by using [Selenium](http://selenium-python.readthedocs.io) to emulate this repetitive work for you.
 
-After saving the html, the script will parse it and create a file structure like below, wherein the katas are separated by difficulty. For each folder representing a kata, there is a folder for each language you completed the problem. The kata description is placed inside the `README.md` file and the solution source code inside `solution.[language_extension]`.
+After saving the HTML, the script will parse it and create a file structure like below, wherein the katas are separated by difficulty. For each folder representing a kata, there is a folder for each language you completed the problem. The kata description is placed inside the `README.md` file and the solution source code inside `solution.[language_extension]`.
 
 ```
 solutions/
@@ -76,7 +76,7 @@ Before executing the script, it is necessary to fill some information in `setup.
                                             to toggle this value to suit you best
 ```
 
-Now run the script responsible for fetching the html:
+Now run the script responsible for fetching the HTML:
 
 `$ python fetch_source.py`
 
@@ -85,9 +85,11 @@ A chrome window will open and then will start to automatically:
 2. go to your solutions page;
 3. scroll down and wait according to the value of `reloads_in_browser` in `setup.json`.
 
-After finishing, the script will save the html in `./source.html`
+After finishing, the script will save the HTML in `./source.html`
 
-Lastly, run the script responsible for parsing the html and creating the file structure:
+OBS: You can skip this step altogether if you prefer to download the HTML source manually. That being the case, it is not necessary to fill both `email` and `password` in `setup.json`.
+
+Lastly, run the script responsible for parsing the HTML and creating the file structure:
 
 `$ python main.py`
 
