@@ -73,7 +73,7 @@ Before executing the script, it is necessary to fill some information in `setup.
   "reloads_in_browser": 100   <------------ # of attempts to reload the page while scrolling down. Each
 }                                           attempt takes 2s, which is the time I deemed enough to load
                                             more katas. This is 'hacky' part I mentioned about. Feel free
-                                            to toggle this value to suit you best
+                                            to fine-tune this value to suit you best
 ```
 
 Now run the script responsible for fetching the HTML:
@@ -87,7 +87,7 @@ A chrome window will open and then will start to automatically:
 
 After finishing, the script will save the HTML in `./source.html`
 
-OBS: You can skip this step altogether if you prefer to download the HTML source manually. That being the case, it is not necessary to fill both `email` and `password` in `setup.json`.
+***OBS**: You can skip this step altogether if you prefer to download the HTML source manually. That being the case, it is not necessary to fill both `email` and `password` in `setup.json`.*
 
 Lastly, run the script responsible for parsing the HTML and creating the file structure:
 
