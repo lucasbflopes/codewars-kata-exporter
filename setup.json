@@ -1,0 +1,1 @@
+{  "codewars": {    "email": "foo@bar.com",    "password": "foo123",    "api_key": "foofoo"  },  "download_folder": "./solutions",  "file_extensions": {    "java": ".java",    "python": ".py",    "javascript": ".js",    "c": ".c",    "c++": ".cpp",    "c#": ".cs",    "perl": ".pl",    "php": ".php",    "ruby": ".rb"  },  "reloads_in_browser": 100}
