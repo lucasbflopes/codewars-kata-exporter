@@ -36,14 +36,16 @@ solutions/
             └── solution.py
 ```
 
+___
 ## How to install
 
 First off, you need to have [Python 3](https://www.python.org/download/releases/3.0/) installed in your machine. Then install all python dependencies required:
 
-`pip3 install -r requirements.txt`
+`$ pip3 install -r requirements.txt`
 
 To use Selenium you need to install a webdriver to interface with a specific browser. The browser I have chosen to use in the script was Chrome, thus you can download it [here](https://sites.google.com/a/chromium.org/chromedriver/downloads).
 
+___
 ## How to run
 
 Before executing the script, it is necessary to fill some information in `setup.json`:
@@ -75,7 +77,7 @@ Before executing the script, it is necessary to fill some information in `setup.
 
 Now run the script responsible for fetching the html:
 
-`python fetch_source.py`
+`$ python fetch_source.py`
 
 A chrome window will open and then will start to automatically:
 1. log into your account
@@ -86,6 +88,6 @@ After finishing, the script will save the html in `./source.html`
 
 Lastly, run the script responsible for parsing the html and creating the file structure:
 
-`python main.py`
+`$ python main.py`
 
 Done! 
