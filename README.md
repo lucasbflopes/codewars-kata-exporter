@@ -1,5 +1,6 @@
 # Codewars Kata Exporter
 
+___
 ## General Information
 
 This script, although too much 'hacky' for my taste, was the best solution I came up with to export all my kata solutions from codewars to a file structure in my hard drive in an automated fashion.
@@ -80,8 +81,8 @@ Now run the script responsible for fetching the html:
 `$ python fetch_source.py`
 
 A chrome window will open and then will start to automatically:
-1. log into your account
-2. go to your solutions page
+1. log into your account;
+2. go to your solutions page;
 3. scroll down and wait according to the value of `reloads_in_browser` in `setup.json`.
 
 After finishing, the script will save the html in `./source.html`
